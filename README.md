@@ -76,7 +76,7 @@ Jopi::Object.define :comments do
 end
 ```
 
-That can result in a document like this (taken from [jsonapi.org](jsonapi.org)):
+That can result in a document like this (taken from [jsonapi.org](www.jsonapi.org)):
 ```json
 {
   "links": {
