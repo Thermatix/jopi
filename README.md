@@ -149,6 +149,9 @@ That can result in a document like this (taken from [jsonapi.org](jsonapi.org)):
 You would render the document like so:
 
 ```ruby
+require '../lib/jopi'
+require 'forum_response_document' 
+
 Jopi::Render :forum_response, @data_Object
 ```
 
