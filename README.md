@@ -146,6 +146,24 @@ That can result in a document like this (taken from [jsonapi.org](jsonapi.org)):
 }
 ```
 
+You would render the document like so:
+
+```ruby
+Jopi::Render :forum_response, @data_Object
+```
+
+`@data_Object` is an object that responds to things that the document describes and will attempt to populate the resultant json document with the responses, for example, it expects `@data_Object` to respond to `posts` like so:
+
+```ruby
+@data_Object.posts
+@data_Object[:posts]
+@data_Object['posts']
+@data_Object::Posts
+@data_Object.instance_variable_get(:@posts)
+```
+
+If it can't get a response for an object Jopi will error out, where as if it can't get for example an `attribute` it will simply provide a warning that it was unobtainable.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
