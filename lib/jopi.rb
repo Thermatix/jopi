@@ -1,5 +1,9 @@
 require "jopi/version"
 
 module Jopi
-  # Your code goes here...
+
+end
+
+%w{dsl base document mixin object template render}.each do |file|
+	require "jopi/#{file}"
 end
