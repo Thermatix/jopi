@@ -5,7 +5,7 @@ It turns a document into components so you can re-use bits of it as well.
 I still haven't quite worked out how you get the data into the resultant document however. 
 The reason I'm creating this gem is becuase the only one (that I can find) is designed to work with rails, I wanted a gem that was data-agnostic, you describe the doucment by it's structure and then link it to the data source(probably through some 121 mapping scheme).
 
-Wondering about the name? **Jo**son-a**pi**
+Wondering about the name? **J**s**o**n-a**pi**
 
 ## Installation
 
